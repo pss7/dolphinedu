@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+/* 공통 - 레이아웃 */
+.topLayoutBox{display: flex; gap: 0 0; justify-content: space-between; align-items: center;}
+.topLayoutBox .textBox span{display: block; margin-bottom: 18px; font-size: 24px; font-weight: 700;}
+.topLayoutBox .textBox h3{margin-bottom: 30px; font-size: 60px; font-weight: 700;}
+.topLayoutBox .textBox p{margin-bottom: 56px; font-size: 24px; font-weight: 500;}
+.topLayoutBox .imgBox img{display: block; width: 100%;}
+.topLayoutBox .view{display: block; width: 336px; height: 56px; line-height: 56px; border-radius: 8px; text-align: center;}
+.topLayoutBox .view.m{display: none;}
+
+@media (max-width: 1199px){
+
+  .topLayoutBox{flex-direction: column; gap: 30px 0;} 
+  .topLayoutBox .textBox,
+  .topLayoutBox .imgBox{width: 100%;}
+  .topLayoutBox .textBox span{font-size: 22px;}
+  .topLayoutBox .textBox h3{font-size: 42px;}
+  .topLayoutBox .textBox p{margin: 0; font-size: 22px;}
+  .topLayoutBox .view{width: 100%;}
+  .topLayoutBox .view.pc{display: none;}
+  .topLayoutBox .view.m{display: block;}
+
+}
+
+@media (max-width: 767px){
+
+  .topLayoutBox .textBox span{margin-bottom: 8px; font-size: 20px;}
+  .topLayoutBox .textBox h3{margin-bottom: 26px; font-size: 30px;}
+  .topLayoutBox .textBox p{font-size: 15px;}
+  .topLayoutBox .view{font-size: 15px; height: 44px; line-height: 44px;}
+
+}
+
+/* 공통 - 레이아웃 */
+.section{position: relative; display: flex; align-items: center; justify-content: center; height: 100vh; z-index: 1;}
+.section::after{content: ''; width: 960px; height: 960px; position: absolute; top: 50%; transform: translateY(-50%); right: 0;  background: url(../images/main/main_bg06.png)no-repeat center; z-index: -1;}
+.comLayoutBox{display: flex; justify-content: space-between;}
+.comLayoutBox .textBox{ flex-shrink: 0; width: 450px; padding-top: 93px;}
+.comLayoutBox .textBox .iconBox{margin-bottom: 25px;}
+.comLayoutBox .textBox h3{margin-bottom: 30px; font-size: 50px; font-weight: 800; color: #191F28;}
+.comLayoutBox .textBox h3 strong{display: block; font-weight: 800;}
+.comLayoutBox .textBox p{font-size: 24px; font-weight: 600; color: #5B5B5B;}
+.comLayoutBox .imgBox{}
+.comLayoutBox .imgBox img{display: block; width: 100%;}
+
+#section03 .comLayoutBox .textBox h3 strong{color: #1E9CFF;}
+#section04 .comLayoutBox .textBox h3 strong{color: #FF781E;}
+#section05 .comLayoutBox .textBox h3 strong{color: #66C839;}
+#section06 .comLayoutBox .textBox h3 strong{color: #9933FF;}
+#section07 .comLayoutBox .textBox h3 strong{color: #334BFF;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section01 */
+#section01{display: flex; align-items: center; height: 100vh; background: url(../images/main/main_bg01.png)no-repeat center; background-size: cover;}
+#section01 .titleBox{margin-bottom: 45px;}
+#section01 .btnBox{display: flex; justify-content: center; gap: 0 16px;}
+
+@media (max-width: 480px){
+
+  #section01 .titleBox{margin-bottom: 36px;}
+  #section01 .btnBox{gap: 0 10px;}
+
+}
+
+/* section02 */
+#section02{position: relative; padding: 196px 0 160px; background: url(../images/main/main_bg02.png)no-repeat center; background-size: cover;}
+#section02 .layoutBox{display: flex; align-items: center; justify-content: center; gap: 0 93px;}
+#section02 .titleBox{margin-bottom: 30px;}
+#section02 .titleBox .subText{font-size: 62px;}
+#section02 .textBox h3{margin-bottom: 18px; font-size: 24px;}
+#section02 .textBox .text01{margin-bottom: 42px; font-size: 44px; font-weight: 700;}
+#section02 .textBox .text01 strong{color: #0086FF;}
+#section02 .textBox .text02{font-size: 24px; font-weight: 600; color: #5B5B5B; line-height: 1.5;}
+#section02 .textBox{flex-shrink: 0;}
+#section02 .imgBox img{display: block; width: 100%;}
+
+@media (max-width: 1199px){
+
+  #section02 .titleBox .subText{font-size: 58px;}
+  #section02 .textBox{text-align: center;}
+  #section02 .textBox h3{font-size: 22px;}
+  #section02 .textBox .text01{margin-bottom: 35px; font-size: 40px;}
+  #section02 .textBox .text02{font-size: 20px;}
+  #section02 .imgBox{width: auto; margin-bottom: 80px;}
+  #section02 .layoutBox{flex-direction: column-reverse;}
+
+}
+
+@media (max-width: 767px){
+
+  #section02{padding: 130px 0;}
+  #section02 .titleBox .subText{font-size: 42px;}
+  #section02 .textBox .text01{font-size: 32px;}
+  #section02 .textBox .text02{font-size: 18px;}
+
+}
+
+@media (max-width: 480px){
+
+  #section02{padding: 80px 0;}
+  #section02 .titleBox .subText{font-size: 30px;}
+  #section02 .textBox h3{font-size: 20px;}
+  #section02 .textBox .text01{margin-bottom: 26px; font-size: 24px;}
+  #section02 .textBox .text02{font-size: 15px;}
+  #section02 .imgBox{margin-bottom: 68px;}  
+
+}
+
+/* section08 */
+#section08{padding: 170px 0 166px; background-color: #E9F6FF;}
+#section08 .topLayoutBox{margin-bottom: 90px;}
+#section08 .topLayoutBox .textBox h3{color:#191F28 ;}
+#section08 .topLayoutBox .textBox p{color: #555555;}
+#section08 .topLayoutBox .view{background-color: #00A3FF; color: #fff;}
+#section08 .list{display: flex; flex-wrap: wrap; gap: 24px 2%;}
+#section08 .list li .iconBox{margin-bottom: 28px;}
+#section08 .list li .iconBox img{display: block;}
+#section08 .list li{min-height: 386px; display: flex; flex-direction: column; padding: 38px; width: 32%; background-color: #fff; border-radius: 24px; box-shadow: 0 4px 20px rgba(0,0,0,.06);}
+#section08 .list li .textBox h4{margin-bottom: 16px; font-size: 27px; font-weight: 800; color: #191F28;}
+#section08 .list li .textBox p{margin-bottom: 15px; font-weight: 500; color: #474C53; line-height: 1.6;}
+#section08 .list li .imgBox{margin-top: auto; gap: 10px 30px; display: flex; flex-wrap: wrap; align-items: center; height: 40px;}
+
+@media (max-width: 1199px){
+
+  #section08 .list li{width: 49%;}
+  #section08 .list li .textBox h4{font-size: 22px;}
+
+}
+
+@media (max-width: 767px){
+
+  #section08 .topLayoutBox{margin-bottom: 60px;}
+  #section08 .list{gap: 20px 2.8%;}
+  #section08 .list li{min-height: 345px; width: 48.6%; padding: 30px;}
+  #section08 .list li .textBox p br{display: none;}
+
+}
+
+@media (max-width: 576px){
+
+  #section08 .topLayoutBox{margin-bottom: 38px;}
+  #section08 .list{gap: 20px 0;}
+  #section08 .list li .iconBox{margin-bottom: 20px;}
+  #section08 .list li .iconBox img{width: 49px;}
+  #section08 .list li{min-height: 290px; width: 100%; border-radius: 12px;}
+  #section08 .list li .textBox p{font-size: 13px;}
+
+}
+
+/* section09 */
+#section09{padding: 170px 0 166px; background: linear-gradient(to right, #3B98FA, #4758F2);}
+#section09 .topLayoutBox{margin-bottom: 80px;}
+#section09 .topLayoutBox .textBox span{ background: linear-gradient(to right, #75F3FF, #4FCFFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text; color: transparent;}
+#section09 .topLayoutBox .textBox h3{color:#fff ;}
+#section09 .topLayoutBox .textBox p{color: #fff;}
+#section09 .topLayoutBox .view{background-color: #45CEE0; color: #fff;}
+#section09 .list{display: flex; flex-wrap: wrap; gap: 20px 2.6%;}
+#section09 .list li{width: 31.6%; border-radius: 20px; background-color: #fff; overflow: hidden;}
+#section09 .list li .iconBox{display: flex; align-items: center; justify-content: center; height: 240px; border-radius: 20px;}
+#section09 .list li .textBox{padding: 40px 35px 45px;}
+#section09 .list li .textBox h4{margin-bottom: 10px; font-size: 27px; font-weight: 800; color: #191F28;}
+#section09 .list li .textBox p{ font-weight: 500; color: #474C53; font-weight: 500; line-height: 1.5;}
+#section09 .list li:nth-child(1) .iconBox{background: linear-gradient(to bottom, #6EC2FF, #46ABFF);}
+#section09 .list li:nth-child(2) .iconBox{background: linear-gradient(to bottom, #68DEEE, #35BECE);}
+#section09 .list li:nth-child(3) .iconBox{background: linear-gradient(to bottom, #ABAAFF, #8481FF);}
+
+@media (max-width: 1199px){
+
+  #section09 .list li .textBox h4{font-size: 24px;}
+
+}
+
+@media (max-width: 1024px){
+
+  #section09 .list li{width: 100%;}
+
+}
+
+@media (max-width: 767px){
+
+  #section09{padding: 80px 0;}
+  #section09 .topLayoutBox{margin-bottom: 30px;}
+  #section09 .list li{border-radius: 12px;}
+  #section09 .list li .textBox{padding: 30px 30px 35px;}
+  #section09 .list li .iconBox{border-radius: 12px;}
+  #section09 .list li .textBox h4{font-size: 22px;}
+
+}
+
+@media (max-width: 480px){
+
+  #section09 .list li .iconBox{height: 190px;}
+  #section09 .list li .textBox p{font-size: 14px;}
+
+}
+
+/* section10 */
+#section10{padding: 140px 0 200px; background: url(../images/main/main_bg03.png)no-repeat center; background-size: cover!important;}
+#section10 .topLayoutBox{margin-bottom: 38px;}
+#section10 .view{background-color: #00A3FF; color: #fff;}
+#section10 .list{display: flex; flex-wrap: wrap; gap: 24px 2%;}
+#section10 .list li .iconBox{margin-bottom: 28px;}
+#section10 .list li .iconBox img{display: block;}
+#section10 .list li{min-height: 308px; padding: 38px; width: 32%; background-color: #fff; border-radius: 24px; box-shadow: 0 4px 20px rgba(0,0,0,.06);}
+#section10 .list li .textBox h4{margin-bottom: 16px; font-size: 27px; font-weight: 800; color: #191F28;}
+#section10 .list li .textBox p{margin-bottom: 15px; font-weight: 500; color: #474C53; line-height: 1.6;}
+
+@media (max-width: 1199px){
+
+  #section10 .list li{width: 49%;}
+  #section10 .list li .textBox h4{font-size: 22px;}
+  #section10 .topLayoutBox .imgBox{margin-bottom: -60px;}
+
+}
+
+@media (max-width: 767px){
+
+  #section10{padding: 80px 0;}
+  #section10 .topLayoutBox{margin-bottom: 60px;}
+  #section10 .list{gap: 20px 2.8%;}
+  #section10 .list li{width: 48.6%; min-height: 250px; padding: 30px;}
+  #section10 .list li .textBox p br{display: none;}
+
+}
+
+@media (max-width: 576px){
+
+  #section10 .topLayoutBox{margin-bottom: 38px;}
+  #section10 .list{gap: 20px 0;}
+  #section10 .list li .iconBox{margin-bottom: 20px;}
+  #section10 .list li .iconBox img{width: 49px;}
+  #section10 .list li{width: 100%; border-radius: 12px;}
+  #section10 .list li .textBox p{font-size: 13px;}
+
+}
+
+@media (max-width: 480px){
+
+  #section10{background: url(../images/main/m_main_bg03.png)no-repeat center top;}
+
+}
+
+/* section11 */
+#section11{padding: 200px 0 260px; background: url(../images/main/main_bg05.png)no-repeat center; background-size: cover!important;}
+#section11 .titleBox{margin-bottom: 104px;}
+#section11 .titleBox .title{font-size: 62px;}
+#section11 .titleBox span{font-size: 62px;}
+#section11 .list{margin-bottom: 124px; display: flex; gap: 24px 32px;}
+#section11 .list li{width: 50%; border-radius: 20px; overflow: hidden; background-color: #fff; box-shadow: 0 4px 40px rgba(0,0,0,.06);}
+#section11 .list li .imgBox{position: relative;}
+#section11 .list li .imgBox .box{ height: 248px; overflow: hidden;}
+#section11 .list li .imgBox .box img{display: block; width: 100%; height: 100%; object-fit: cover;}
+#section11 .list li .imgBox .logoBox{position: absolute; right:43px; bottom: -46px;}
+#section11 .list li .imgBox .logoBox img{display: block;}
+#section11 .list li .imgBox .logoBox02{display: flex; align-items: center; justify-content: center; width: 100px; height: 100px; border-radius: 50%; overflow: hidden; border: 2px solid #43A9FF; background-color: #fff; box-shadow: 0 4px 10px rgba(0,0,0,.1);}
+#section11 .list li .textBox{padding: 50px 40px 108px;}
+#section11 .list li .textBox span{display: block; margin-bottom: 20px; font-size: 20px; font-weight: 800; color: #00A3FF;}
+#section11 .list li .textBox h3{margin-bottom: 32px; font-size: 32px; font-weight: 800; color: #191F28;}
+#section11 .list li .textBox p{font-size: 21px; font-weight: 500; color: #474C53; line-height: 1.6;}
+#section11 .logoImgBox{height: 88px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
+#section11 .logoImgBox img{display: block; margin: 0 auto;}
+
+@media (max-width: 1199px){
+
+  #section11{padding: 170px 0;}
+  #section11 .titleBox span,
+  #section11 .titleBox .title{font-size: 50px;}
+  #section11 .list li .textBox span{font-size: 18px;}
+  #section11 .list li .textBox h3{font-size: 30px;}
+  #section11 .list li .textBox p{font-size: 18px;}
+
+
+}
+
+@media (max-width: 1024px){
+
+  #section11 .list{flex-wrap: wrap;}
+  #section11 .list li{width: 100%;}
+  #section11 .titleBox{margin-bottom: 100px;}
+   #section11 .logoImgBox{height: auto; gap: 60px 0;}
+  #section11 .logoImgBox .box{width: 50%;}
+
+}
+
+@media (max-width: 767px){
+
+  #section11{padding: 80px 0;}
+  #section11 .titleBox {margin-bottom: 45px;}
+  #section11 .titleBox span, #section11 .titleBox .title{font-size: 30px;}
+  #section11 .list{margin-bottom: 100px;}
+  #section11 .list li{border-radius: 12px;}
+  #section11 .list li .textBox span{margin-bottom: 18px; font-size: 16px;}
+  #section11 .list li .textBox h3{margin-bottom: 28px; font-size: 24px;}
+  #section11 .list li .textBox p{font-size: 16px;}
+  #section11 .list li .textBox{padding: 30px 22px 46px;}
+
+}
+
+@media (max-width: 480px){
+
+  #section11 .list{margin-bottom: 50px;}
+  #section11 .list li .textBox span{margin-bottom: 7px; font-size: 14px;}
+  #section11 .list li .textBox h3{margin-bottom: 16px; font-size: 20px;}
+  #section11 .list li .textBox p{font-size: 12px;}
+
+  #section11 .list li .imgBox .logoBox01 img,
+  #section11 .list li .imgBox .logoBox02{width: 80px; height: 80px;}
+  #section11 .list li .imgBox .logoBox02 img{width: 54px;}
+  #section11 .list li .imgBox .logoBox{right: 30px; bottom: -38px;}
+  #section11 .logoImgBox{gap: 60px 50px;}
+  #section11 .logoImgBox .box{flex: calc(50% - 50px / 2);}
+  #section11 .logoImgBox .box img{max-width: 100%;}
+
+}
+
+/* section12 */ 
+#section12{padding: 110px 0 120px; background: url(../images/main/main_bg07.png)no-repeat center; background-size: cover!important;}
+#section12 .titleBox{margin-bottom: 34px;}
+#section12 .titleBox .subText{margin: 10px 0;}
+#section12 .titleBox .title,
+#section12 .titleBox .subText{font-size: 50px;}
+#section12 .btnBox{display: flex; justify-content: center; gap: 0 16px;} 
+
+@media (max-width: 1199px){
+
+  #section12 .titleBox .title,
+  #section12 .titleBox .subText{font-size: 46px;}
+
+}
+
+@media (max-width: 767px){
+
+  #section12{padding: 80px 0;}
+  #section12 .titleBox .title,
+  #section12 .titleBox .subText{font-size: 36px;}
+
+}
+
+@media (max-width: 480px){
+
+  #section12 .titleBox{margin-bottom: 28px;}
+  #section12 .titleBox .title,
+  #section12 .titleBox .subText{font-size: 25px;}
+
+}
