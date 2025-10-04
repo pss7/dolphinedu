@@ -65,7 +65,8 @@
 
   #section03.pc{display: none;}
   #section03.m{padding: 80px 0; display: block;}
-  #section03.m .comLayoutBox{display: block;}
+  #section03.m .comLayoutBox{display: block; margin-bottom: 80px;}
+  #section03.m .comLayoutBox:last-child{margin-bottom: 0;}
   #section03.m .comLayoutBox:nth-child(1) .textBox h3 strong{color: #1E9CFF;}
   #section03.m .comLayoutBox:nth-child(2) .textBox h3 strong{color: #FF781E;}
   #section03.m .comLayoutBox:nth-child(3) .textBox h3 strong{color: #66C839;}
