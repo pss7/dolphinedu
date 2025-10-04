@@ -15,14 +15,18 @@ $(function () {
   $imgs.removeClass('is-active').first().addClass('is-active');
 
   $win.on('scroll resize', function () {
-    var mid = $win.scrollTop() + $win.height() / 2;
-    var current = null, best = Infinity;
+    const mid = $win.scrollTop() + $win.height() / 2;
+    let current = null;
+    let best = Infinity;
 
     $boxes.each(function () {
-      var $el = $(this);
-      var top = $el.offset().top;
-      var bottom = top + $el.outerHeight(true);
-      var dist = (mid >= top && mid < bottom) ? 0 : Math.min(Math.abs(mid - top), Math.abs(mid - bottom));
+      const $el = $(this);
+      const top = $el.offset().top;
+      const bottom = top + $el.outerHeight(true);
+      const dist =
+        (mid >= top && mid < bottom)
+          ? 0
+          : Math.min(Math.abs(mid - top), Math.abs(mid - bottom));
 
       if (dist < best) {
         best = dist;
